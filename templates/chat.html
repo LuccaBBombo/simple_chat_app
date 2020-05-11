@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
+    <title>{{ username }}'s Chat page</title>
 </head>
 <body>
-    <form method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <button>Enter Chat!</button>
-    </form>
+    <h1>Welcome, {{ username }}</h1>
+    {{ chat_messages }}
 </body>
 </html>
